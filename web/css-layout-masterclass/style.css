@@ -1,0 +1,14 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  display: inline-block;
+}
+
+.box:first-child {
+  float: left;
+}
+
+.box:last-child {
+  float: right;
+}
