@@ -1,14 +1,21 @@
+.father {
+  /* flex container에서는 자식요소가 아닌 부모요소에서 자식요소를 제어해야함 */
+  display: flex;
+  height: 100vh;
+  /* 자식 요소 간격 설정 */
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .box {
   width: 200px;
   height: 200px;
-  background-color: tomato;
-  display: inline-block;
-}
+  background-color: blue;
+  color: white;
+  font-size: 36px;
 
-.box:first-child {
-  float: left;
-}
-
-.box:last-child {
-  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
