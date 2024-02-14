@@ -2,10 +2,11 @@
   /* flex container에서는 자식요소가 아닌 부모요소에서 자식요소를 제어해야함 */
   display: flex;
   height: 100vh;
-  /* 자식 요소 간격 설정 */
-  gap: 10px;
-  justify-content: space-around;
+  row-gap: 20px;
+  column-gap: 10px;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -18,4 +19,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box:first-child {
+  align-self: flex-start;
+}
+
+.box:nth-child(3) {
+  background-color: blueviolet;
+  order: 2;
+}
+
+.box:nth-child(6) {
+  background-color: aqua;
+  order: 1;
 }
