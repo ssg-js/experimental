@@ -1,36 +1,20 @@
 .father {
-  /* flex container에서는 자식요소가 아닌 부모요소에서 자식요소를 제어해야함 */
-  display: flex;
-  height: 100vh;
-  row-gap: 20px;
-  column-gap: 10px;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 100px 200px 50px;
+  grid-template-rows: 200px 100px;
+  row-gap: 10px;
+  column-gap: 20px;
 }
 
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-  color: white;
-  font-size: 36px;
-
+.child {
+  background-color: tomato;
   display: flex;
+  color: white;
+  font-size: 28px;
   justify-content: center;
   align-items: center;
 }
 
-.box:first-child {
-  align-self: flex-start;
-}
-
-.box:nth-child(3) {
-  background-color: blueviolet;
-  order: 2;
-}
-
-.box:nth-child(6) {
-  background-color: aqua;
-  order: 1;
+.child+:nth-child(4) {
+  background-color: aquamarine;
 }
