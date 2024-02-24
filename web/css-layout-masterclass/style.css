@@ -24,7 +24,7 @@
 
 .child:nth-child(6) {
   background-color: steelblue;
-  /* align-self: end;
-  justify-self: start; */
-  place-self: end start;
+  align-self: end;
+  justify-self: start;
+  /* place-self: end start; */
 }
